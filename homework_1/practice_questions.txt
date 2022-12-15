@@ -45,7 +45,8 @@ without using int(...) function.
 
 Explanation:
 
-Assume '123' is given. This can get as 1 * 100 + 2 * 10 + 3 * 1.
+Assume '123' is given. This can be get as 1 * 100 + 2 * 10 + 3 * 1.
+Hint: ord(...) built-in function can be used.
 
 ######################################################################################################################
 
