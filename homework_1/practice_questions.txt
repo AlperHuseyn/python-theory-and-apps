@@ -33,8 +33,8 @@ output: [60, 70, 80, 90, 50, 10, 20, 30, 40])
 
 ######################################################################################################################
 
-#3 Request single digit type int number from the stdin. (Let n represent the entered number) Print below pattern to the
-stdout.
+#3 Request single digit type int number from the stdin. (Let n represent the entered number) Print below computation to
+the stdout.
 
 n + nn + nnn + nnnn
 
