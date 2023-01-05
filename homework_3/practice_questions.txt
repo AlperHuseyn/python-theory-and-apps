@@ -206,9 +206,9 @@ This pattern is obtained by calling disp_char_pattern('F').
 
 #10.a Implement the following series proposed by Newton with a function named newton_pi:
 
-def newyon_pi(k)
+def newton_pi(k)
 
-pi = sum(n:0->infinity)(2^(n + 1) * (n!)^2) / (2 * n + 1)!
+pi = sum(n:0 -> k)(2^(n + 1) * (n!)^2) / (2 * n + 1)!
 
 Here k indicates the final value that n can take. The function should return the sum of the series.
 
@@ -216,14 +216,40 @@ In the latest versions of Python, the factorial function has also been added in 
 
 ######################################################################################################################
 
-#10.b
+#10.b Implement the series suggested by Nilakantha Somayaji using a function called somayaji_pi:
+
+def somayaji_pi(n)
+
+pi = 3 + (4 / 3^3 - 3) - (4 / 5^3 - 5) + (4 / 7^3 - 7) - (4 / 9^3 - 9) + ...
+
+The parameter n of the function specifies the number of terms. For example, in the image mentioned above, there are
+4 terms. The function should return the sum of the series.
 
 ######################################################################################################################
 
-#10.c
+#10.c Implement the series suggested by Bailey, Borwein and Plouffe using a function called bailey_borwein_plouffe_pi:
+
+pi = sum(n:0 -> k)((1 / 16)^n * ((4 / 8 * n + 1) - (2 / 8 * n + 4) - (1 / 8 * n + 5) - (1 / 8 * n + 6))
+
+The parameter of the function specifies the maximum value that n can take. The function should return the sum of
+the series.
 
 ######################################################################################################################
 
-#11
+#11 Write a function called sort_tuple_list that takes a list of tuples (tuples have one name, and two separate numbers)
+as a parameter and sorts the list based on the first, second, and third elements of the tuple. If the first elements
+of the tuples are equal, the second elements will be used for sorting, and if the second elements are also equal,
+the third elements will be used. For example:
+
+def sort_tuple_list(a):
+    pass
+
+a = [('Tom', 19, 80), ('Json', 22, 90), ('Jony', 17, 91), ('Jony', 17, 93), ('Json',21, 85)]
+sort_tuple_list(a)
+print(a)
+
+The result should be:
+
+[('Jony', 17, 91), ('Jony', 17, 93), ('Json', 21, 85), ('Json', 22, 90), ('Tom', 19, 80)]
 
 ######################################################################################################################
