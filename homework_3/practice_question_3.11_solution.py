@@ -1,6 +1,6 @@
 """ Instructor solution(s) for practice question #3.11 """
 # This sorting algorithms are not necessary, sort() and sorted() can be used and these are better solutions
-# sorted() uses quicksort algorithm
+# sorted() uses quicksort sorting algorithm
 
 
 # 1st way: using bubble sort
@@ -14,6 +14,7 @@ def sort_tuple_list(tuple_list):
 a = [('Tom', 19, 80), ('Json', 22, 90), ('Jony', 17, 91), ('Jony', 17, 93), ('Json',21, 85)]
 sort_tuple_list(a)
 print(a)
+
 
 #2nd way: using selection sort
 def sort_tuple_list(tuple_list):
