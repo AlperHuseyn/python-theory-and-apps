@@ -120,8 +120,8 @@ The dictionary object can be like this:
 d = {'A': {'B': 5, 'C': 7, 'D': 10}, 'B': {'A': 5, 'D': 4, 'E': 17, 'G': 20}, ....}
 
 * The solution for the Traveling Salesman Problem using brute force logic in a case where there are n cities is done
-by examining (n-1)!/2 tours. However, here, you can do this with (n-1)!. The thing to do is to remove city A from the
-total of 7 cities (i.e. ['A', 'B', 'C', 'D', 'E', 'F', 'G']) and create all permutations and calculate their path
+by examining (n-1)!/2 tours. However, here, you can do this with (n-1)!. The thing to do here is to remove city A from
+the total of 7 cities (i.e. ['A', 'B', 'C', 'D', 'E', 'F', 'G']) and create all permutations and calculate their path
 lengths, then find the smallest one. Of course, there is not a path for each permutation. Because there is not a direct
 path between each and every city. It is necessary not to calculate permutations without direct paths between them.
 
