@@ -3,11 +3,12 @@ import itertools
 
 
 # Travel salesman problem: tsp
-def tsp(cities, distances):
+def tsp(cities, distances, starting_point):
     shortest_path = None
     shortest_distance = float('inf')
     for path in itertools.permutations(cities):
-        if path[0] != 'A':
+        path += (starting_point, )
+        if path[0] != starting_point:
             continue
         valid = True
         distance = 0
@@ -22,15 +23,16 @@ def tsp(cities, distances):
     return shortest_path, shortest_distance
 
 
-c = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
-d = {'A': {'B': 5, 'C': 7, 'D': 10},
-     'B': {'A': 5, 'D': 4, 'E': 17, 'G': 20},
-     'C': {'A': 7, 'D': 6, 'F': 9},
-     'D': {'A': 10, 'B': 4, 'C': 6, 'E': 3, 'F': 12},
-     'E': {'B': 17, 'D': 3, 'F': 14, 'G': 6},
-     'F': {'C': 9, 'D': 12, 'E': 14, 'G': 10},
-     'G': {'B': 20, 'E': 6, 'F': 10}}
+c = ['Istanbul', 'Bursa', 'Corum', 'Denizli', 'Edirne', 'Ordu', 'Giresun']
+sp = 'Istanbul'
+d = {'Istanbul': {'Bursa': 5, 'Corum': 7, 'Denizli': 10},
+     'Bursa': {'Istanbul': 5, 'Denizli': 4, 'Edirne': 17, 'Giresun': 20},
+     'Corum': {'Istanbul': 7, 'Denizli': 6, 'Ordu': 9},
+     'Denizli': {'Istanbul': 10, 'Bursa': 4, 'Corum': 6, 'Edirne': 3, 'Ordu': 12},
+     'Edirne': {'Bursa': 17, 'Denizli': 3, 'Ordu': 14, 'Giresun': 6},
+     'Ordu': {'Corum': 9, 'Denizli': 12, 'Edirne': 14, 'Giresun': 10},
+     'Giresun': {'Bursa': 20, 'Edirne': 6, 'Ordu': 10}}
 
-s_path, s_distance = tsp(c, d)
+s_path, s_distance = tsp(c, d, sp)
 print(f'Shortest path: {s_path}')
 print(f'Shortest distance: {s_distance}')
