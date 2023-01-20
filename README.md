@@ -52,3 +52,5 @@ the questions or solutions provided, feel free to submit a pull request.
 ## Note
 
 The solutions may not be the best or most efficient way to solve the problems.
+
+Questions prepared by: Kaan Aslan
