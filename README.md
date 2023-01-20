@@ -49,8 +49,6 @@ understanding and skills.
 We welcome any contributions to this repository. If you have any alternative solutions, improvements or feedback on 
 the questions or solutions provided, feel free to submit a pull request.
 
-## Disclaimer
+## Note
 
-The questions and solutions provided in this repository are for educational purposes only and should not be used 
-for any other purpose. The solutions may not be the best or most efficient way to solve the problems and should 
-not be used in any production code.
+The solutions may not be the best or most efficient way to solve the problems.
