@@ -7,11 +7,11 @@ class Prompt:
 
     def run(self):
         while True:
-            cmd = input(self.prompt)
-            if len(cmd.strip()) == 0:
+            cmd = input(self.prompt).strip()
+            if len(cmd) == 0:
                 continue
 
-            if cmd.strip() == 'quit':
+            if cmd == 'quit':
                 break
             else:
                 print(cmd[::-1])
