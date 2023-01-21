@@ -1,6 +1,5 @@
 # Python Theory Practice Questions
 
-----
 This repository contains a collection of practice questions on Python theory, ranging from beginner to advanced level. 
 The questions are organized as numbered folders, each named in a format of homework_x.
 
@@ -52,5 +51,7 @@ the questions or solutions provided, feel free to submit a pull request.
 ## Note
 
 The solutions may not be the best or most efficient way to solve the problems.
+
+----
 
 Questions prepared by: Kaan Aslan
