@@ -12,8 +12,8 @@ class Circle:
         print(f'center: (<{self.center_x}>, <{self.center_y}>), radius: <{self.radius}>')
 
     def move(self, x_off, y_off):
-        self.center_x = x_off
-        self.center_y = y_off
+        self.center_x += x_off
+        self.center_y += y_off
 
     def is_inside(self, x, y):
         return self.radius >= math.sqrt((x - self.center_x) ** 2 + (y - self.center_y) ** 2)
