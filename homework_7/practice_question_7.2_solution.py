@@ -17,10 +17,11 @@ class Rectangle:
     def intersect(self, rect):
         left = max(self.x1, rect.x1)
         right = min(self.x2, rect.x2)
-        top =  min(self.y1, rect.y1)
+        top = min(self.y1, rect.y1)
         bottom = max(self.y2, rect.y2)
 
         return Rectangle(left, top, right, bottom) if (left <= right) and (top <= bottom) else None
+
 
 r1 = Rectangle(10, 10, 20, 20)
 r1.disp()
