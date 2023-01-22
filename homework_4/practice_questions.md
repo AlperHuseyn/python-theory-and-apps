@@ -53,7 +53,7 @@ The parameter of the function is the height of the Pascal triangle. For example,
 
 Remember that the elements of the Pascal triangle are the number of k-subsets of an n-element set. The rows give the 
 number of elements in the set, and the elements in the rows give the number of subsets (starting from 0) of that set. 
-The combination C(n, k) is in the form `n! / (k ! * (n – k)!)`, where "!" denotes the factorial function.
+The combination `C(n, k)` is in the form `n! / (k ! * (n – k)!)`, where "!" denotes the factorial function.
 
 ---
 
