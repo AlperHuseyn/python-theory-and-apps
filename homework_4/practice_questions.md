@@ -8,14 +8,14 @@ file, make sure that these codes are not run when importing.
 1. Please write the following function that removes repeating elements from a list and creates a new list from the
 remaining non-repeating elements:
 
-```
+```python
     def exclude_repeated_items(a):
         pass
 ```
 
 An example usage could be:
 
-```
+```python
     import homework
     
     a = [1, 2, 2, 5, 3, 6, 6, 7, 3, 8, 9, 2, 1, 4, 4]
@@ -26,7 +26,7 @@ An example usage could be:
 
 Here, the following list should be printed:
 
-```
+```python
     [1, 2, 5, 3, 6, 7, 8, 9, 4]
 ```
 
@@ -36,14 +36,14 @@ Note that the relative order of the elements has not changed.
 
 2. Write the following function that prints a Pascal triangle:
 
-```
+```python
     def disp_pascal_triangle(n):
         pass
 ```
 
 The parameter of the function is the height of the Pascal triangle. For example, if the value of n is 5:
 
-```
+```python
         1
        1 1
       1 2 1
@@ -53,13 +53,13 @@ The parameter of the function is the height of the Pascal triangle. For example,
 
 Remember that the elements of the Pascal triangle are the number of k-subsets of an n-element set. The rows give the 
 number of elements in the set, and the elements in the rows give the number of subsets (starting from 0) of that set. 
-The combination C(n, k) is in the form n! / (k ! * (n – k)!), where "!" denotes the factorial function.
+The combination C(n, k) is in the form `n! / (k ! * (n – k)!)`, where "!" denotes the factorial function.
 
 ---
 
 3. Write a function that draws the pattern described below with the given number from the keyboard:
 
-```
+```python
     size-3
     ----c----
     --c-b-c--
@@ -82,14 +82,14 @@ The combination C(n, k) is in the form n! / (k ! * (n – k)!), where "!" denote
 
 4. Write the is_domino function that checks if the tuples in a list of two-element tuples are dominos.
 
-```
+```python
     def is_domino(l):
 ```
 
 The function returns a boolean value. In domino tuples, the second element of the tuple is the same as the first
 element of the next tuple. For example, the following tuple list is a domino:
 
-```
+```python
     [(1, 3), (3, 6), (6, 9), (9, 1)]
 ```
 ---
