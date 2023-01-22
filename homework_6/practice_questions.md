@@ -1,7 +1,7 @@
 ---
 
 1. Write the set comprehension of vocal letters in a text as a single expression format. For example, if the text is
-"today the weather is very nice", the resulting set will contain the strings 'i', 'a', 'o', 'e'.
+`"today the weather is very nice"`, the resulting set will contain the strings `'i', 'a', 'o', 'e'`.
 
 ---
 
@@ -10,11 +10,15 @@ be the number itself and the second element should be the strings "odd" or "even
 is odd or even. For example:
 
 
-```a = [1, 2, 3, 4, 5]```
+```python
+a = [1, 2, 3, 4, 5]
+```
 
 When this list is processed through the list comprehension, the following tuple list should be obtained:
 
-```[(1, 'odd'), (2, 'even'), (3, 'odd'), (4, 'even'), (5, 'odd')]```
+```python
+[(1, 'odd'), (2, 'even'), (3, 'odd'), (4, 'even'), (5, 'odd')]
+```
 
 The code should be in a single expression.
 
@@ -25,11 +29,15 @@ to do it without using the ternary operator.
 
 3. Using list comprehension, transpose a matrix made up of columns of equal length into a single expression. For example:
 
-```a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]```
+```python
+a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
 
 The list obtained from the list comprehension should be as follows:
 
-```[[1, 4, 7], [2, 5, 8], [3, 6, 9]]```
+```python
+[[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+```
 
 Hint: Another list comprehension can be used on the left side of the list comprehension expression to solve the question.
 
@@ -40,11 +48,15 @@ Also, solve this question without using list comprehension, using the classical 
 4. Solve the above question using list comprehension in a single expression for matrices with unequal column lengths.
 For example, if the matrix is:
 
-```a = [[1, 2, 3], [4, 5], [6, 7, 8, 9], [10]]```
+```python
+a = [[1, 2, 3], [4, 5], [6, 7, 8, 9], [10]]
+```
 
 The matrix obtained from the list comprehension should be as follows:
 
-```[[1, 4, 6, 10], [2, 5, 7], [3, 8], [9]]```
+```python
+[[1, 4, 6, 10], [2, 5, 7], [3, 8], [9]]
+```
 
 Also, solve this question without using list comprehension, using the classical method.
 
@@ -55,7 +67,9 @@ Also, solve this question without using list comprehension, using the classical 
 average should be equal to the main mean. For example:
 
 
-```a = [1, 2, 3, 4, 5]```
+```python
+a = [1, 2, 3, 4, 5]
+```
 
 In this case, calculate the average of the averages of all 2-sample subsets of this list. You should find all 2-sample
 subsets of the list and calculate the average of their averages.
@@ -69,11 +83,15 @@ to shorten your code for calculating averages.
 Write an expression that includes a list comprehension, so that as a result, the vowels in the words of the text are
 eliminated. For example:
 
-```s = 'today the weather is very beautiful'```
+```python
+s = 'today the weather is very beautiful'
+```
 
 The text obtained from the expression you will write should be like this:
 
-```tdy th wthr s vry btfl```
+```python
+tdy th wthr s vry btfl
+```
 
 This operation should be done by a single expression.
 
@@ -88,7 +106,7 @@ specified below in the form presented.
 generated with the following code:
 
     
-```
+```python
     import networkx as nx
     import matplotlib.pyplot as plt
     
@@ -122,7 +140,9 @@ generated with the following code:
 * The ability to go from one city to another and the distances between them should be held in a dictionary object.
 The dictionary object can be like this:
 
-```d = {'A': {'B': 5, 'C': 7, 'D': 10}, 'B': {'A': 5, 'D': 4, 'E': 17, 'G': 20}, ....} ```
+```python
+d = {'A': {'B': 5, 'C': 7, 'D': 10}, 'B': {'A': 5, 'D': 4, 'E': 17, 'G': 20}, ....} 
+```
 
 * The solution for the Traveling Salesman Problem using brute force logic in a case where there are n cities is done
 by examining (n-1)!/2 tours. However, here, you can do this with (n-1)!. The thing to do here is to remove city A from
