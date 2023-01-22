@@ -18,13 +18,13 @@ The questions in this repository cover a wide range of topics including:
 
 Each folder contains the following files:
 
-* '**practice_questions.txt**' : This file contains the practice questions for that folder.
-* '**practice_question_#x.x.py**' : These files contain the solutions to the questions provided in 
-'**practice_questions.txt**'.
-* '**practice_question_#x.x_alternative_solution.py**' : This file contains alternative solutions to the questions 
-provided in '**practice_questions.txt**'
-* '**practice_questions_solution**' : This file contains the instructor's solutions to the questions provided in 
-'**practice_questions.txt**'.
+* `practice_questions.txt` : This file contains the practice questions for that folder.
+* `practice_question_#x.x.py` : These files contain the solutions to the questions provided in 
+`practice_questions.txt`.
+* `practice_question_#x.x_alternative_solution.py` : This file contains alternative solutions to the questions 
+provided in `practice_questions.txt`
+* `practice_questions_solution` : This file contains the instructor's solutions to the questions provided in 
+`practice_questions.txt`.
 
 It is important to note that the questions and solutions are based on the information covered in lectures up to that 
 point, and are designed to help users to achieve the following objectives:
@@ -38,9 +38,9 @@ point, and are designed to help users to achieve the following objectives:
 
 1. Browse through the folders to find the practice questions that match your current level of understanding.
 2. Attempt to solve the questions on your own before referring to the solutions provided in the 
-'**practice_question_#x.x.py**' files.
-3. Compare your solutions with the instructor's solutions provided in the '**practice_questions_solution**' file and the 
-alternative solutions provided in '**practice_question_#x.x_alternative_solution.py**' to see how you can improve your 
+`practice_question_#x.x.py` files.
+3. Compare your solutions with the instructor's solutions provided in the `practice_questions_solution` file and the 
+alternative solutions provided in `practice_question_#x.x_alternative_solution.py` to see how you can improve your 
 understanding and skills.
 
 ## Contribution
