@@ -4,11 +4,12 @@
 
 Explanation:
 
-For the below lists, output must be '**True**'.
+For the below lists, output must be `True`.
 
-    l1 = [10, 'ali', 'veli', 20, 'selami']
-    l2 = ['selami', 20, 'veli', 'ali', 10]
-
+```python
+l1 = [10, 'ali', 'veli', 20, 'selami']
+l2 = ['selami', 20, 'veli', 'ali', 10]
+```
 ----
 
 2. First create a list. Then swap first half of this list elements with the second half of it. Print the output to the
@@ -16,28 +17,29 @@ console.
 
 Explanation:
 
-Assume there is a list such as '**l3**'.
+Assume there is a list such as ```l3```.
 
-    l3 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+```python
+l3 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+```
 
-After the swap process '**l3**' must be look like this:
-
-    output: [60, 70, 80, 90, 100, 10, 20, 30, 40, 50]
-
+After the swap process `l3` must be look like this:
+```
+output: [60, 70, 80, 90, 100, 10, 20, 30, 40, 50]
+```
 Hint: List can have an odd number of elements. If this is the case, middle element must remain at the same index after
 the swap.
+```python
+l4 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 
-    l4 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-
-    output: [60, 70, 80, 90, 50, 10, 20, 30, 40])
-
+output: [60, 70, 80, 90, 50, 10, 20, 30, 40])
+```
 ----
 
 3. Request single digit type int number from the stdin. (Let n represent the entered number) Print below computation to
 the stdout.
 
-
-    n + nn + nnn + nnnn
+```n + nn + nnn + nnnn```
 
 ----
 
@@ -46,7 +48,7 @@ without using int(...) function.
 
 Explanation:
 
-Assume '123' is given. This can be gotten as "**1 * 100 + 2 * 10 + 3 * 1**".
+Assume '123' is given. This can be gotten as ```1 * 100 + 2 * 10 + 3 * 1```.
 
 Hint: ord(...) built-in function can be used.
 
@@ -61,8 +63,9 @@ Explanation:
 In case of not equality on the both sides of space chars, left side must have one space more than right side.
 You can test the number of space chars printing colons like below:
 
-    print(':' + s + ':') or print(':', s, ':', sep='')
-
+```python
+print(':' + s + ':') or print(':', s, ':', sep='')
+```
 ----
 
 
