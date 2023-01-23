@@ -18,13 +18,13 @@ The questions in this repository cover a wide range of topics including:
 
 Each folder contains the following files:
 
-* `practice_questions.txt` : This file contains the practice questions for that folder.
+* `practice_questions.md` : This file contains the practice questions for that folder.
 * `practice_question_#x.x.py` : These files contain the solutions to the questions provided in 
-`practice_questions.txt`.
+`practice_questions.md`.
 * `practice_question_#x.x_alternative_solution.py` : This file contains alternative solutions to the questions 
-provided in `practice_questions.txt`
+provided in `practice_questions.md`
 * `practice_questions_solution` : This file contains the instructor's solutions to the questions provided in 
-`practice_questions.txt`.
+`practice_questions.md`.
 
 It is important to note that the questions and solutions are based on the information covered in lectures up to that 
 point, and are designed to help users to achieve the following objectives:
