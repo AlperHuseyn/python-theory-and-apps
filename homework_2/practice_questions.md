@@ -7,7 +7,7 @@ may be trailing and the leading spaces in the text. These characters should not 
 
 An example request:
 
-```python
+```
 Please enter a text consisting of numeric characters: 123
 246
 ```
