@@ -1,4 +1,4 @@
-""" My approach to practice question #8.1, Array class """
+""" My approach to practice question #8.1; Array class, and Date class """
 
 
 class Array(object):
