@@ -1,5 +1,3 @@
----
-
 1. Write the Array class as follows:
 
 - The Array class should create an instance attribute called array and store elements in it. The `__init__` method's parameter 
