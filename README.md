@@ -54,4 +54,4 @@ The solutions may not be the best or most efficient way to solve the problems.
 
 ----
 
-Questions prepared by: Kaan Aslan
+Questions prepared by: Kaan Aslan; C and System Programmers Association
