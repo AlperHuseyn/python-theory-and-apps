@@ -73,16 +73,16 @@ class Date(object):
         return Date._day_text[self.t_days % 7]
 
     def __lt__(self, dt):
-        return dt.t_days < self.t_days
-
-    def __le__(self, dt):
-        return dt.t_days <= self.t_days
-
-    def __gt__(self, dt):
         return dt.t_days > self.t_days
 
-    def __ge__(self, dt):
+    def __le__(self, dt):
         return dt.t_days >= self.t_days
+
+    def __gt__(self, dt):
+        return dt.t_days < self.t_days
+
+    def __ge__(self, dt):
+        return dt.t_days <= self.t_days
 
     def __eq__(self, dt):
         return dt.t_days == self.t_days
