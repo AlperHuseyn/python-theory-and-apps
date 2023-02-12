@@ -1,5 +1,3 @@
---- 
-
 1. Write the class named Time as specified below:
 
 - In the `__init__` method of the class, the time information that the object will hold is obtained and stored in instance 
