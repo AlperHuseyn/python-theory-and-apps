@@ -15,6 +15,8 @@ def my_grep(path, text):
         print(f'File does not contain the word: "{text}"')
 
 
+# Pycharm sets current working directory where the project is created,
+# so getting the root path via os.getcwd() and adding file name to it works for me
 f = f'{os.getcwd()}' + r"\Nature's Fury- Surviving Storms and Volcanic Eruptions.md"
 t = 'weather'  # text contains 5
 
