@@ -1,5 +1,3 @@
---- 
-
 1. Write a function called `mygrep` that prints lines containing certain words in a file in the following format:
 
 ```python
