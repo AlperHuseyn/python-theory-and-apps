@@ -1,4 +1,4 @@
-# Python Theory Practice Questions
+# Python Theory-and-App Practice Questions
 
 This repository contains a collection of practice questions on Python theory, ranging from beginner to advanced level. 
 The questions are organized as numbered folders, each named in a format of homework_x.
