@@ -1,5 +1,3 @@
----
-
 1. Write an iterable class named `GrepIterable` that gives the lines in which certain words appear in a file. The class's 
 `__init__` method will take the path of the file and the text to be searched for.
 
