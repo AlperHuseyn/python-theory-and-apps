@@ -1,5 +1,3 @@
----
-
 1. The count function in the itertools module of the Python standard library gives us an iteration (iterator) object. 
 When this object is iterated over, values are obtained starting from a certain value and increasing indefinitely with 
 increments. Its parametric form is as follows:
