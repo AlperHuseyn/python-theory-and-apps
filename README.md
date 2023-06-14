@@ -1,6 +1,6 @@
 # Python Theory-and-App Practice Questions
 
-This repository contains a collection of practice questions on Python theory and app, ranging from beginner to advanced level. 
+This repository contains a collection of practice questions on Python theory and apps, ranging from beginner to advanced level. 
 The questions are organized as numbered folders, each named in a format of homework_x.
 
 The questions in this repository cover a wide range of topics including:
@@ -54,4 +54,4 @@ The solutions may not be the best or most efficient way to solve the problems.
 
 ----
 
-Questions prepared by: Kaan Aslan; C and System Programmers Association
+Questions prepared by: **Kaan Aslan**; [C and System Programmers Association](https://csystem.org/)
