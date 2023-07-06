@@ -40,6 +40,7 @@ You can plot the graph as follows:
 
 ```python
 import matplotlib.pyplot as plt
+
 plt.plot(x, y)
 plt.show()
 ```
