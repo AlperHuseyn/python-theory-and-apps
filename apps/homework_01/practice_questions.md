@@ -30,6 +30,10 @@ x = random.sample(range(1000000), n)
 
 Alternatively, you can use the `randrange` or `randint` functions from the `random module` with the following command:
 
+```python
+x = [random.randrange(1000000) for i in range(n)]
+```
+
 After these operations, you should have two lists x and y. The x list should contain 20 values ranging from 1000 to 20000, and the y list should contain the corresponding runtimes.
 
 You can plot the graph as follows:
