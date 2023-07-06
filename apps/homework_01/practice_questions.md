@@ -38,10 +38,8 @@ After these operations, you should have two lists x and y. The x list should con
 
 You can plot the graph as follows:
 
-import matplotlib.pyplot as plt
-
-
 ```python
+import matplotlib.pyplot as plt
 plt.plot(x, y)
 plt.show()
 ```
