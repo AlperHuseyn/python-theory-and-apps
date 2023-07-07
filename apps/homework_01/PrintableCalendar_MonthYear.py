@@ -60,7 +60,9 @@ def prmonth(year, month):
     print()
     
 def main():
-    prmonth(2018, 8)
+    year = int(input('Please enter a year in format "YYYY": '))
+    month = int(input('Please enter a month in format "mm" (no leading zero for single digits): '))
+    prmonth(year, month)
     
     
 if __name__ == '__main__':
