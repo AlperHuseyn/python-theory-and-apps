@@ -8,8 +8,10 @@ def pryear(year, c=6):
     months = [31, 29 if isleap(year) else 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     
     for i in range(1, len(months) + 1):
-        if i in [4, 7, 10]:
+        # Start a new line for the next row of months
+        if i % 3 == 1 and i != 1:
             print(end='\n\n')
+            
         # Get the first day of the year's months
         first_day_of_the_year_months = datetime.date(datetime.date.today().year, i, 1)
         
@@ -45,8 +47,9 @@ def pryear(year, c=6):
             # Move the cursor to the next line if it's the end of the week
             if (day + weekday) % 7 == 0:
                 print()
+                
         # Print a new line after last week
-        print(' ' * c)
+        print()
 
 def main():
     year = int(input('Please enter a year in format "YYYY": '))
