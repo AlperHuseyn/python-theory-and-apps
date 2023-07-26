@@ -3,7 +3,7 @@
 
 Descriptions:
 
-- The name of the database should be "student_notes.sqlite."
+- The name of the database should be `"student_notes.sqlite."`
 
 - The database will consist of three tables. The tables and their properties are described below:
 
@@ -13,17 +13,13 @@ student Table:
 student_no: Student number. Type: INTEGER. To be taken as the Primary key.
 student_name: Student's name. Type: VARCHAR(64) or directly TEXT.
 student_photo: Student's photo. Type: BLOB.
-```
 
-```
 class Table:
 
 class_id: Type: Integer. To be taken as Primary key and autoincrement. It will act as a foreign key for the grade table.
 class_name: Type: VARCHAR(32) or directly TEXT. Represents the name of the course.
 class_week_hours: The weekly class hours of the course.
-```
 
-```
 grade Table:
 
 student_no: Student number. Indicates which student the grade belongs to. To be taken as Primary key and autoincrement. Type: INTEGER.
@@ -32,7 +28,7 @@ class_exam_no: The number of the exam (1 for the first exam, 2 for the second, e
 class_grade: Represents the grade obtained in the respective course out of 100. Type: INTEGER.
 ```
 
-- Create the database tables using the "CREATE TABLE IF NOT EXISTS" SQL commands within the program.
+- Create the database tables using the `"CREATE TABLE IF NOT EXISTS"` SQL commands within the program.
 
 - Create a menu as follows inside a loop:
 
