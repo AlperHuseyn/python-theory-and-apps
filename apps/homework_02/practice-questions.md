@@ -1,5 +1,4 @@
 # Create an SQLite3 database that holds students' basic information and their grades from various courses as described below, and perform the specified operations on this database.
----
 
 Descriptions:
 
