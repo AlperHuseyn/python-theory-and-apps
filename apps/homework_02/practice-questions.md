@@ -39,7 +39,7 @@ class_grade: Represents the grade obtained in the respective course out of 100. 
 
 Your selection:
 
-When `"Course Entry"` is selected, the following input should be taken:
+* When `"Course Entry"` is selected, the following input should be taken:
 
 `Enter the course name and weekly class hours:`
 
@@ -49,7 +49,7 @@ An example input should be as follows:
 
 Note the input is separated by a comma. Here, the course name is "Physics" and the weekly class hours are "6."
 
-When `"Student Entry"` is selected, the following inputs should be taken in order:
+* When `"Student Entry"` is selected, the following inputs should be taken in order:
 
 `Enter the student's full name, student number, and the file path of the student's photo:`
 
@@ -76,7 +76,7 @@ f.close()
 
 Make sure to open the file in `"binary mode."`
 
-When `"Grade Entry"` is selected, the system should ask for which student's grade in which course will be entered:
+* When `"Grade Entry"` is selected, the system should ask for which student's grade in which course will be entered:
 
 `Enter the full name of the student, the course name, exam number, and grade:`
 
@@ -86,7 +86,7 @@ An example input would be:
 
 Here, the input consists of the student's full name, followed by the course name, then the exam number, and finally the grade. Make sure to separate them with commas.
 
-When `"Student Query"` is selected, the following input should be asked:
+* When `"Student Query"` is selected, the following input should be asked:
 
 `Enter the student's number:`
 
