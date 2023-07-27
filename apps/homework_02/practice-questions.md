@@ -78,11 +78,11 @@ Make sure to open the file in `"binary mode."`
 
 * When `"Grade Entry"` is selected, the system should ask for which student's grade in which course will be entered:
 
-`Enter the full name of the student, the course name, exam number, and grade:`
+`Enter the student no, the course name, exam number, and grade:`
 
 An example input would be:
 
-`Kaan Aslan, Physics, 1, 70`
+`820, Physics, 1, 70`
 
 Here, the input consists of the student's full name, followed by the course name, then the exam number, and finally the grade. Make sure to separate them with commas.
 
