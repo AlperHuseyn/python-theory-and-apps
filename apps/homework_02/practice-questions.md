@@ -84,7 +84,7 @@ An example input would be:
 
 `820, Physics, 1, 70`
 
-Here, the input consists of the student's full name, followed by the course name, then the exam number, and finally the grade. Make sure to separate them with commas.
+Here, the input consists of the student's no, followed by the course name, then the exam number, and finally the grade. Make sure to separate them with commas.
 
 * When `"Student Query"` is selected, the following input should be asked:
 
