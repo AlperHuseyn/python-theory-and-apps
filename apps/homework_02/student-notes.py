@@ -6,6 +6,7 @@ import sys
 
 
 def generate_tables(cursor):
+    # Create the necessary tables if they don't exist
     cursor.executescript("""
         CREATE TABLE IF NOT EXISTS student(
             student_no INTEGER PRIMARY KEY,
@@ -30,7 +31,7 @@ def generate_tables(cursor):
             );
         """)
 
-def course_entry(cursor):
+def add_course(cursor):
     try:
         entry = input('Enter the course name and weekly course hours (e.g. Physics, 6): ').strip()
         course_name, course_week_hours = entry.split(',')
@@ -45,17 +46,17 @@ def course_entry(cursor):
         """, (course_name.strip(), int(course_week_hours)))
         
         cursor.connection.commit()        
-        print('Record has been successfully added...')
+        print('Course has been successfully added....')
     
     except sqlite3.Error as err:
-        print(f"Record hasn't been added **[{err}]**")
+        print(f"Course hasn't been added. Error: {err}")
     except Exception as err:
-        print(f'Invalid entry **[{err}]**')
+        print(f'Invalid entry. Error: {err}')
     print()
 
-def student_entry(cursor):
+def add_student(cursor):
     try:
-        entry = input("Enter the student's full name, student number, and the file path of the student's photo (in order seperated with comma): ").strip()
+        entry = input("Enter the student's full name, student number, and the file path of the student's photo (in order and seperated with comma): ").strip()
         student_name, student_no, student_photo = entry.split(',')
         
         with open(os.getcwd() + f'\{student_photo.strip()}', 'rb') as file:
@@ -74,15 +75,15 @@ def student_entry(cursor):
         """, (student_name.strip(), int(student_no), photo_bytes_obj.strip()))
         
         cursor.connection.commit()        
-        print('Record has been successfully added...')
+        print('Student record has been successfully added...')
 
     except sqlite3.Error as err:
-        print(f"Record hasn't been added **[{err}]**")
+        print(f"Student record hasn't been added. Error: {err}")
     except Exception as err:
-        print(f'Invalid entry **[{err}]**')
+        print(f'Invalid entry. Error: {err}')
     print()
 
-def grade_entry(cursor):
+def add_grade(cursor):
     try:
         entry = input("Enter the student no, the course name, exam number, and grade in order: ").strip()
         student_no, course_name, course_exam_no, course_grade = entry.split(',')
@@ -116,19 +117,19 @@ def grade_entry(cursor):
         """, (int(student_no), course_name.strip(), int(course_exam_no), int(course_grade)))
         
         cursor.connection.commit()        
-        print('Record has been successfully added...')
+        print('Grade record has been successfully added....')
 
     except sqlite3.Error as err:
-        print(f"Record hasn't been added **[{err}]**")
+        print(f"Grade record hasn't been added. Error: {err}")
     except Exception as err:
-        print(f'Invalid entry **[{err}]**')
+        print(f'Invalid entry. Error: {err}')
     print()
 
 def student_query(cursor):
     try:
         student_no = input("Enter the student's number (press ENTER key for all students): ")
         
-        # ENTER key pressed, all students will be listed
+        # ENTER key pressed, list all students
         if not student_no:
             cursor.execute("""
                            SELECT student_name, student_no
@@ -228,11 +229,11 @@ def prompt_user_action(cursor):
         user_choice = input('Enter the number of your choice: ').strip()
         
         if user_choice == '1':
-            course_entry(cursor)
+            add_course(cursor)
         elif user_choice == '2':
-            student_entry(cursor)
+            add_student(cursor)
         elif user_choice == '3':
-            grade_entry(cursor)
+            add_grade(cursor)
         elif user_choice == '4':
             student_query(cursor)
         elif user_choice == '5':
