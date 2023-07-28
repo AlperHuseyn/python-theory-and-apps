@@ -128,7 +128,7 @@ def student_query(cursor):
     try:
         student_no = input("Enter the student's number (press ENTER key for all students): ")
         
-        # ENTER key press, all students
+        # ENTER key pressed, all students will be listed
         if not student_no:
             cursor.execute("""
                            SELECT student_name, student_no
@@ -150,8 +150,8 @@ def student_query(cursor):
         
         for student in students:
             student_name, student_no = student
-            print(f'\nName: {student_name}')
-            print(f'Number: {student_no}')
+            print(f'Name: {student_name}')
+            print(f'Number: {student_no}\n')
             
             cursor.execute("""
                            SELECT course_name, course_grade
@@ -162,9 +162,28 @@ def student_query(cursor):
             grades = cursor.fetchall()
             
             if grades:
-                # ...
-            
-                print('\nWeighted Average Grade: {avg:.2f}')  # f ekle
+                cname = {}
+                for course_name, grade in grades:
+                    cname.setdefault(course_name, []).append(grade)
+                
+                avg = 0
+                total = 0
+                for course_name, grade in cname.items():
+                    grade2str = ', '.join(map(str, grade))
+                    print(f'{course_name}: {grade2str}')
+                   
+                    cursor.execute("""
+                                   SELECT course_week_hours
+                                   FROM course
+                                   WHERE course_name = ?
+                                   """, (course_name, ))
+                    
+                    course_week_hours = cursor.fetchone()[0]  # convert it to int
+                    
+                    avg += (sum(grade) / len(grade) * int(course_week_hours))
+                    total += int(course_week_hours)
+
+                print(f'\nWeighted Average Grade: {avg / total:.2f}')
             else:
                 print('No grades found.')
                 
@@ -235,3 +254,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
