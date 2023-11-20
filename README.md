@@ -52,6 +52,14 @@ the questions or solutions provided, feel free to submit a pull request.
 
 The solutions may not be the best or most efficient way to solve the problems.
 
+# My Achievements
+
+## Certificate of Completion
+
+[See my certificate here.](https://github.com/AlperHuseyn/python-theory-and-apps/blob/solutions/certificate-of-comletion-python-programming.pdf)
+
+I successfully completed the Python Programming Language and Its Applications course. This certificate acknowledges my achievement and demonstrates my commitment to continuous learning.
+
 ----
 
 Questions prepared by: **Kaan Aslan**; [C and System Programmers Association](https://csystem.org/)
